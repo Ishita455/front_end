@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms example</title>
+</head>
+<body>
+    <h2>Students Registration Form</h2>
+    <form action="any_backend_code">
+        <div>
+            <label for="st_name">Student name:</label>
+             <input id="st_name" type="text" name="st_name" placeholder="Enter your Name">
+        </div>
+        <br>
+        <div>
+            <label for="st_age">Student Age : </label>
+            <input id="st_age" type="number" name="st_age" placeholder="Enter your Age">
+        </div>
+        <br>
+        <div>
+            Email: <input type="email" name="st_email">
+
+        </div>
+        <br>
+        <div>  
+            Gender: male <input type="radio" name="st_gender">
+                 female <input type="radio" name="st_gender">
+                 others <input type="radio" name="st_gender">
+        </div>
+        <br>
+        <div>
+            Are you 18 years old: <input type="checkbox" name="st_eligibility">
+        </div>
+        <br>
+        <div>
+            DOB: <input type="date" name="st_dob">
+        </div>
+        <br>
+        <div>
+            Password: <input type="password" name="st_password" placeholder="Enter Password">
+        </div>
+        <br>
+        <div>
+            Education Description:<br> <textarea name="st_desciption" id="" cols="60" rows="5" placeholder="Enter your Description"></textarea>
+        </div>
+        <br>
+        <div>
+            Qulification:  <select name="st_qualification">
+                <option value="Graduate">Graduate</option>
+                <option value="12th+">12th+</option>
+                <option value="PostGratuate">PostGratuate</option>
+                <option value="10th +">10th+</option>
+            </select>
+        </div>
+        <br>
+        <div>
+        <input type="submit" value="Submit Form">
+        <input type="reset" value="Reset Form">
+        </div>
+    </form>
+</body>
+</html>
