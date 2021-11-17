@@ -1,0 +1,45 @@
+body{
+    background-color: rgb(143, 143, 206);
+    color: rgb(20, 22, 22);
+    margin: 0;
+    padding: 0;
+    background: url('https://source.unsplash.com/user/erondu/1600x900') no-repeat center center/cover;
+}
+.header::before{
+    content: "";
+    background: url('https://source.unsplash.com/user/erondu/1600x900') no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 100% ;
+}
+.banner{
+    display: flex;
+    flex-direction: column;
+    margin: 2px 200px;
+    justify-content: center;
+        height: 300px;
+    align-items: center;
+}
+h3{
+    font-size: 3rem;
+}
+
+p{
+    text-align: center;
+}
+/*.banner::before{
+    content: "inserting contentb befor banner";
+}*/
+
+/*.banner::after{
+    content: "inserting contentb befor banner";
+}*/
+
+.navigation-items{
+    display: flex;
+    font-size: 15px;
+}
+.navigation-items li{
+    list-style: none;
+    padding: 32px 20px;
+}

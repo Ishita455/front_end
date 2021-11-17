@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --item-color: teal;
+}
+h1, h2{
+    text-align: center;
+    color: var(--item-color);
+}
+.container{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+
+}
+
+.item{
+    height: 30vh;
+    border: 3px solid var(--item-color);
+    border-radius: 12px;
+    padding: 15px;
+    margin: 50px;
+    text-align: center;
+    justify-content: center;
+    box-shadow: 5px 5px var(--item-color);
+
+}
+.text{
+    display: none;
+}
+.btn, icon{
+    color: var(--item-color);
+
+}
+
+ @media only screen and (min-width: 0px) and (max-width:500px) {
+    .container{
+        position: relative;
+        display: inline-block;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    
+}
+
+@media only screen and (min-width:500px) and (max-width:800px) {
+    .container{
+        position: relative;
+        display: inline-block;
+        flex-wrap: wrap;
+    }
+}

@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav ul{
+    display: flex;
+}
+li{
+    width: 100vw;
+    padding: 10px;
+    border: 1px solid;
+    justify-content: center;
+    text-align: center;
+    list-style: none;
+
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+#item-1{
+    background-color: rgb(230, 5, 5);
+}
+#item-2{
+    background-color: rgb(87, 211, 87);
+}
+#item-3{
+    background-color: rgb(111, 45, 218);
+}
+#item-4{
+    background-color: rgb(204, 139, 19);
+}
+#item-5{
+    background-color: rgb(41, 177, 231);
+}
+.about{
+    background-color: rgb(87, 211, 87);
+}
+.home{
+    background-color: rgb(230, 5, 5);
+}
+.gallery{
+    background-color: rgb(111, 45, 218);
+}
+.projects{
+    background-color: rgb(204, 139, 19);
+}
+.contact{
+    background-color: rgb(41, 177, 231);
+}

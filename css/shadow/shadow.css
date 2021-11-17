@@ -1,0 +1,29 @@
+
+.container{
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    padding: 25px 12px;
+    margin: 25px 12px;
+    background-color: darkkhaki;
+    box-shadow: 7 px 12px darksalmon;
+}
+
+.card-top{
+    box-shadow: 6px 6px rgb(94, 77, 194);
+    box-shadow: 6px 6px 10px 9px rgba(rgb(190, 92, 92), rgb(114, 207, 114), rgb(41, 41, 139), 0.4);
+
+}
+.card-bottom{/*y-axis, x-axis, color radius*/
+    box-shadow: 6px 6px forestgreen;/*10px 6px 10px red*/ 
+    box-shadow: 6px 6px 10px 9px rgba(rgb(190, 92, 92), rgb(114, 207, 114), rgb(41, 41, 139), 0.4);
+    box-shadow: 15px 10px blue, 20px 25px red;
+}
+.card h2{
+    text-shadow: 5px 5px wheat;/*-5px @top apply*?
+    
+}
