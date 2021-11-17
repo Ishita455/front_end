@@ -1,0 +1,35 @@
+body{
+    font-family: 'Girassol', cursive;
+}
+.res-heading-title{
+    color: crimson;
+    background-color: darkkhaki;
+    font-size: 30px;
+    border-radius: 5px;
+    height: 32px;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.8em;
+}
+
+.site-font-bold{
+    font-style: italic;
+    font-weight: bold;
+}
+
+.menu-item{
+    color: darkorange;
+    background-color: darkslategray;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 1.8em;
+}
+.btn-orange {
+    color: floralwhite;
+    background-color: orange;
+    height: 32px;
+    border: none;
+    border-radius: 5px;
+}

@@ -1,0 +1,29 @@
+
+p{
+    background-color: coral;
+    color: darkblue;
+    font-weight: bold;
+    text-align: center;
+}
+
+/*div li p{
+    background-color: darkcyan;
+    color: darkgray;
+}*/
+
+/*below is targeting all those p tag which r any level child of div*/
+/*div  p{
+    background-color: darkcyan;
+    color: darkgray;
+}*/
+
+/*below is targeting only those p tag which r direct child of div*/
+div > p{
+    background-color: darkcyan;
+    color: darkgray;
+}
+
+/*below is targeting only those p tag which r direct sibling of div or p is right after div*/
+div + p{
+    background-color: darkolivegreen;
+}

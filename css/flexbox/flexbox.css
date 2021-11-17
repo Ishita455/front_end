@@ -1,0 +1,64 @@
+
+.flex-container{
+    width: 100%;
+    height: 500px;
+    border: 3px solid rgb(71, 13, 126);
+    /* initialized a flex box/container */
+    display: flex;
+        /* flex property to be applied on flex box/container */
+        flex-direction: row; /*default*/ /*all flex items should get stacked in one row*/
+        /*flex-direction: column;*/ /*all flex items should get stacked in one column*/
+        /*flex-direction: row-reverse;
+        flex-direction: column-reverse;*/
+
+        flex-wrap: wrap;
+       /* flex-wrap: wrap-reverse; */
+       /* shorthand version : direction wrap */
+       /*flex-flow: row-reverse wrap; */
+
+       /*justify-content: center; *//* aligns flex items centrally on x-axis(main axis) */
+       /*justify-content: space-between; */ /*equal space between flex item with no starting & endingspace*/
+       /*justify-content: space-around;*/   /*equal space around each flex content*/
+       /*justify-content: space-evenly; */  /*equal space between and also start & end*/
+        /*align-items: center; */   /*aligns flex items vertically center*/
+        /*align-items: flex-end;
+        align-items: flex-start;   */ /*default*/
+        /*align-items: stretch;   *//*allows equal vertical space between flex items*/
+    }
+
+.flexitem{
+    border: 2px solid rgb(46, 71, 8);
+    background-color: rgb(207, 132, 170);
+    width: 150px;
+    height: 60px;
+    margin: 10px;
+    padding: 5px;
+}
+
+#flexitem-1{
+
+    /* Flex properties to be applied on flex item */
+
+    /*order: 2;*/   /*higher the order later it appers in the flex items*/
+
+    /*flex-grow: 3;*/   /*occupies space bigger than other flex item when its get a chance to grow*/
+    /*flex-shrink: 3;*/ /*occupies space shrinking than other flex item when its get a chance to shrink*/
+}
+#flexitem-2{
+    /*in flex direction row flex-basis controls the width of a flex item*/
+    /*in flex direction column flex-basis controls the width of a flex item*/
+    flex-basis: 250px;
+    align-self: flex-end;
+
+}
+#flexitem-3{
+
+     /* shorthand version :grow shrink basis */
+     /*flex: 3 3 300px;*/
+
+     align-self: flex-start;
+     align-self: flex-end;
+     align-self: center;
+
+
+}

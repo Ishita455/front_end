@@ -1,0 +1,52 @@
+
+.container{
+    width: 250px;
+    margin: auto;
+}
+input{
+    display: block;
+}
+input[type="text"]{
+    border: 4px solid green;
+}
+input[type="submit"]{
+    background-color: none;
+    border: 2px solid blueviolet;
+}
+a[target]{
+    padding: 10px;
+    font-size: 20px;
+    font-style: italic;
+    color: rgb(165, 42, 138);
+}
+
+a[target="_self"]{
+    padding: 10px;
+    font-size: 20px;
+    font-style: italic;
+    color: rgb(219, 33, 8);
+}
+
+li:nth-child(4){
+    color: cornflowerblue;
+    font-size: large;
+}
+
+li:nth-child(2){
+    color: rgb(37, 153, 22);
+    font-size: 38px;
+}
+
+li:nth-child(2n+0){
+    background-color: rgb(47, 20, 90);
+    font-size: 38px;
+}
+/*target odds elements takes value of n=0, ..*/
+li:nth-child(2n+1){
+    background-color: rgb(218, 230, 51);
+    font-size: 38px;
+}
+
+li:nth-child(even){
+    font-style: italic;
+}

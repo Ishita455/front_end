@@ -1,0 +1,29 @@
+.top-section{
+    border: 1px solid red;
+
+}
+img{
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: auto;
+}
+h4{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0px;
+    text-align: center;
+}
+.wrap{
+    border: 3px solid rgb(17, 14, 20);
+    background-color: rgb(241, 185, 136);
+    padding: 20px;
+    margin: 5px;
+    width: 30%;
+    display: inline-block;
+    box-sizing: border-box;
+}
+.container{
+    margin: auto;
+    width: 1000px;
+}
+    

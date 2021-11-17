@@ -1,0 +1,35 @@
+#firstpara{
+    height: 100PX;
+    width: 400PX;
+    /*
+    border-color: aquamarine;
+    border-width: 4PX;
+    border-style: solid;
+    */
+    border: 6px solid blue;
+    border-radius: 30px;
+    background-color: blanchedalmond;
+}
+
+#secondpara{
+    height: 100px;
+    width: 400px;
+   /* border: 7px solid rebeccapurple;*/
+    border-radius: 30px;
+    background-color: seagreen ;
+    border-top: 10px solid steelblue;
+    border-bottom:10px solid khaki;
+    border-left:10px solid lawngreen;
+    border-right:10px solid violet;
+    border-top-left-radius: 80px;
+
+}
+
+#thirdpara{
+    height: 600px;
+    width: 800px;
+    background-image: url('https://cdn-icons-png.flaticon.com/512/25/25694.png');
+    background-repeat: no-repeat;
+    border: 4px solid red;
+    background-position: center center;
+}

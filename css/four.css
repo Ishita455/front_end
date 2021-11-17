@@ -1,0 +1,11 @@
+#site-header h2{
+    color: aquamarine;
+}
+
+#site-header small{
+    color: blueviolet;
+}
+
+#site-content-text, #site-content-form, #site-footer {
+    color: brown;
+}
