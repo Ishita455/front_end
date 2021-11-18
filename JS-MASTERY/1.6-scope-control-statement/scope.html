@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope in JS</title>
+</head>
+<body>
+    <h2>Scope of variable in JS</h2>
+
+    <script>
+        //if we declare variable directly inside script tag it takes global scope
+        var name = "Peter";
+        var name = "John";  //var re-declaration with var keyword does not give error 
+        console.log(name)
+
+        function f1(){
+            var name2 = "Jane";  // this will take local scope of funtn
+            //console.log(name2);
+
+        }
+        //console.log(name2);
+
+        let output = "Hello";
+        // let output = "New Hello";    // will give error let will not allow re-declaration of same variable
+
+        function f2(){
+        let output = "New Hello";   //but let will allow re-declaration inside  a funtn 
+        console.log("Inside let "+output)
+
+        }
+        f2();
+        console.log("Outside let "+output)
+
+        const finalVal = "This cannot be modified, as its a constant"
+        //finalVal = "Im changing value of const hence will give error"
+        console.log(finalVal)
+
+
+    </script>
+</body>
+</html>

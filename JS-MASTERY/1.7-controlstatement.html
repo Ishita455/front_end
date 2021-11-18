@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If else and switch case</title>
+</head>
+
+<body>
+    <h2>If else and switch case, decision based program flow</h2>
+
+    <script>
+        let age = 18;
+
+        if (age > 18) {
+            //debugger;
+            console.log("Allowed for driving")
+        }
+        else if (age === 18) {    //=== checks value n datatype, == checks value only
+
+            console.log("Allowed for driving n apply for DL")
+
+        }
+        else {
+            console.log(" Not Allowed for driving")
+
+        }
+
+        const day = 7;
+        switch (day) {
+            case 1:
+                console.log("today is mon")
+                break;
+
+            case 3:
+                console.log("today is wed")
+                break;
+            case 6:
+                console.log("today is sat")
+                break;
+
+            default:
+                console.log("I dont konw what day is")
+
+                break;
+        }
+
+    </script>
+</body>
+
+</html>

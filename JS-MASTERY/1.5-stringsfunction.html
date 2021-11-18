@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Functions</title>
+</head>
+<body>
+    <h3>String Fun</h3>
+
+    <script>
+        var line = "John is a good boy";
+        console.log(line.length);
+
+        console.log(line.indexOf("oo"));    //finds the first occurence of the item
+        console.log(line.lastIndexOf("o"));    //finds the first occurence of the item
+
+        console.log(line.slice(2,6));   //last index not included and allows negetive index also like -2
+        console.log(line.substring(2,6));  //last index not included
+        console.log(line.substr(2,6));  //2nd para is length, here it means 6 char starting from index 2 and include 6
+        
+        console.log(line.toUpperCase());
+
+        var data = "  today is a good day to     outside   ";
+        console.log(data)
+        console.log(data.trim());   //removes leading n trailing spaces
+
+        console.log(line);
+        var result = line.replace("John","Peter");    //doesnt change original string
+        console.log(result);
+
+        console.log(line.charAt(3))
+        console.log(line[5])
+
+        console.log(line.charCodeAt(3))
+
+    </script>
+</body>
+
+</html>
