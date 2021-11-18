@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects in JS</title>
+</head>
+
+<body>
+    <h3>Objects in JS</h3>
+
+    <script>
+
+        let var1 = 22;
+        console.log("type of var1 " + typeof (var1));
+        let var2 = "John";
+        console.log("type of var2 " + typeof (var2));
+        let var3 = 40.65;
+        console.log("type of var3 " + typeof (var3));
+        let var4 = false;
+        console.log("type of var4 " + typeof (var4));
+        let var5;   //default of js variable is undefined...if(var5) => false
+        console.log("type of var5 " + typeof (var5));
+        let var6 = undefined;
+        console.log("type of var6 " + typeof (var6));
+        let var7 = null;
+        console.log("type of var7 " + typeof (var7));
+
+        //Create my own datatype and its object
+        let student = {
+            name: "peter",
+            rollNo: 554,
+            age: 23
+        }
+
+        console.log(student)
+        console.log(typeof (student))
+
+        console.log(student.name)
+        console.log(student['name'])
+
+        // Object destructing
+        const { rollNo, age } = student;
+        console.log(rollNo)
+        console.log(age)
+
+    </script>
+</body>
+
+</html>
