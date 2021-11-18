@@ -1,0 +1,111 @@
+/* Alternative way of importing another stle or css in your curent css file, other option is to add link style sheet in your html file */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700&display=swap'); */
+
+/* Apply below style to all elements in the page */
+
+*{
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* avoids the box model issure and width provided does not get streched if you add margin padding border to the container*/
+    outline: none;
+    border: none;
+    text-decoration: none; /* removes underline from anchore tag */
+    text-transform: capitalize; /* makes 1st letter capital */
+    overflow: hidden;   /*clip off the extra text which is going out of box*/
+    scroll-behavior: smooth;    /* when scrolling will happen it should have smooth effect */
+
+}
+/* Style the menu section */
+.header{
+    position: fixed;   /* it will make the nmenu fixed if scrolling through page */
+    top: 0;
+    left: 0;
+    right: 0;
+    /* background-color: rgb(58, 196, 58);  */
+    height: 65px;
+    z-index: 100;   /* header menu item should be always raised like a 3D view */
+}
+
+.header .navbar{
+    display: flex;  /* making flex container will help move items inside it */
+}
+
+.header .navbar a{
+    flex: 1;    /* every anchor tag should equal space in the whole row */
+    text-align: center; /* align the text inside every a tag to horizontally center */
+    font-size: 22px;
+    line-height: 65px;
+    color: aliceblue;
+}
+
+/* apply pseudo selector hover and change the brightness */
+.header .navbar a:hover{
+    filter: brightness(.8);
+}
+
+/* apply differt b-c on each a menu item */
+.header .navbar a:nth-child(1){
+    background: rgb(238, 27, 27);
+}
+.header .navbar a:nth-child(2){
+    background: rgb(19, 212, 35);
+}
+.header .navbar a:nth-child(3){
+    background: rgb(107, 36, 223);
+}
+.header .navbar a:nth-child(4){
+    background: rgb(238, 146, 27);
+}
+.header .navbar a:nth-child(5){
+    background: rgb(56, 188, 240);
+}
+
+/* style the main body section */
+.container{
+    display: flex;
+    width: 500%;
+    height: 100vh;
+}
+
+.main-section{
+    display: flex;
+    width: 20%;
+    height: 100vh;
+    align-items: center;  /* aligns the content vetically center  */ 
+    justify-content: center;    /* aligns the content horizontally center  */
+    font-size: 8vw;
+    /* letter-spacing: 0.3 rem;    space betwwn the leeters in a word */
+    text-transform: uppercase;
+    font-weight: bold;
+    color: azure;
+}
+
+.container .main-section:nth-child(1){
+    background: rgb(238, 27, 27);
+}
+.container .main-section:nth-child(2){
+    background: rgb(19, 212, 35);
+}
+.container .main-section:nth-child(3){
+    background: rgb(107, 36, 223);
+}
+.container .main-section:nth-child(4){
+    background: rgb(238, 146, 27);
+}
+.container .main-section:nth-child(5){
+    background: rgb(56, 188, 240);
+}
+
+/* apply media query to adjust styling for different devices make it responsive */
+@media (max-width: 750px) {
+    .header .navbar a span {
+        display: none;  /* hide the menu text only show icon upto screen width of 750px */
+    }
+}
+
+
+
+
+
