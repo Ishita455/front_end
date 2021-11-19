@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function in JS</title>
+</head>
+
+<body>
+    <h2>function in JS</h2>
+
+    <ul>
+        <li>Function helps us to avoid repeating code over n over again</li>
+        <li>Function is a piece of reuseable code that will written once and used many times</li>
+        <li>Function starts with function keyword and has a name</li>
+        <li>Function can take parmeter or they can be of non parameter</li>
+        <li>function may or may not have return type</li>
+        <li>cade inside a funtn get executed when its called</li>
+    </ul>
+
+    <script>
+
+        //defination of funtn and no para
+        function addNumbers(){
+            console.log(5+6)
+        }
+        addNumbers();   //calling of funtn
+
+        //funtn with 2 parameters
+        function addTwoNumbers(num1, num2){
+            let result = num1 + num2;
+            console.log(result);    //this funtn doesnt return anything to the caller
+        }
+
+        addTwoNumbers(3,4);
+        //debugger;
+        //funtn with 2 parameters and return 
+        function addTwoNumbersAndResult(num1, num2){
+            let result = num1 + num2;
+            return result;  //this function return output here only
+
+            console.log("this line will not get executed becoz alrady returned");  
+        }
+        addTwoNumbers(3,45);
+
+        let output = addTwoNumbersAndResult(5,6);    //calling of funtn with parameters and accepting the returned value
+        console.log(output);
+
+
+        //defaut value parameter is only used if the value for the parameter is not passed by caller
+        function add2NumWithReturnandDefaultValue(num1, num2=4){
+            return num1+num2
+        }
+        let out1 = add2NumWithReturnandDefaultValue(22,33);
+        console.log(out1);
+
+         out1 = add2NumWithReturnandDefaultValue(22);//num2 value is not take default as 4
+        console.log(out1);
+    </script>
+</body>
+
+</html>

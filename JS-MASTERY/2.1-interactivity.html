@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactivity in JS</title>
+</head>
+
+<body>
+    <p>Interactivity in JS</p>
+
+    <script>
+        function add(){
+            //promt returns the input value
+           // let num1 = prompt("Enter the value of 1st nu");
+           let num1 = prompt("Enter the value of 1st nu" ,"2");
+            num1 = parseInt(num1);  //covert string into number
+            let num2 = prompt("Enter the value of 12nd nu");
+            num2 = parseInt(num2);
+            let result = num1 + num2;
+            alert(`Result of adding ${num1} and ${num2} is ${result}`)
+            //alert does not return any value
+        }
+        add();
+
+        function deleteCart(){
+            //confirm will help user to decide on an action
+            let input = confirm("Are u sure u want to delete the cart");
+
+            if(input){
+                console.log("cart has been deleted succesfully")
+            }else{
+                console.log("cart cannot be deleted ")
+
+            }
+        
+        }
+        deleteCart();
+    </script>
+</body>
+
+</html>

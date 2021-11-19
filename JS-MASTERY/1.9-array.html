@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays in JS</title>
+</head>
+<body>
+    <h2>Arrays in JS</h2>
+    
+    <script>
+        // Array can keep more than one similar or non-similar items
+        let ageArray = [23,32,35,56,64];    //arrays of similar items
+        let names = ["John" , "Ishi" ,"peter", "jane"];
+        let salaries = [234.44,2342.5,2.43];
+        let ramdomArray = [12, "pater", 234.45]
+        console.log(salaries);
+        console.log(ramdomArray);
+        // console.log(typeof(salaries))
+        console.log(salaries.length)
+        salaries.push(34.23)
+
+        salaries = salaries.sort();
+        salaries.push(34.23)
+
+        console.log("slary after sorting "+salaries);
+        //removes 2 items then added new one
+        console.log(salaries.splice(0,2,123.3,234.8))   //index, no of items to be removed or added
+        console.log("slary after addition "+salaries);
+
+        console.log(salaries.splice(0,2))   //index, no of items to be removed or added
+        console.log("slary after deletion "+salaries);
+
+        console.log(ramdomArray[2]) //gives item at 2nd index
+        console.log(ramdomArray[3]) //undefined
+
+        //let deptArray = new Array(4);   //it will create four empty items
+        let deptArray = new Array("phy","maths","chem");
+        console.log(deptArray)
+
+        console.log(typeof(deptArray))  //arrays in JS is of type objects
+
+        let student1 = {
+            name: "peter",
+            rollNo: 554,
+            age: 23
+        }
+
+        let student2 = {
+            name: "john",
+            "roll No": 254,
+            age: 26
+        }
+        let students = [student1, student2];    //arrays of objects
+        console.log(students)
+
+    </script>
+</body>
+</html>
