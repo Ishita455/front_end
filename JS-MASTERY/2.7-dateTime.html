@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date and Time in JS</title>
+</head>
+
+<body>
+    <h2>Date and Time in JS</h2>
+    <div id="dateTime"></div>
+    <div id="formattedDate"></div>
+
+    <script>
+
+        setInterval(function test() {
+            let currentDateTime = new Date();
+            //console.log(currentDateTime);
+            document.querySelector('#dateTime').innerHTML = currentDateTime;
+        }, 1000);
+
+        let date1 = new Date(0);
+        console.log(date1);
+
+        date1 = new Date(5000); //time in millisecond from Thu Jan 01 1970 05:30:00
+        console.log(date1); //05:30:05
+
+        //let date2 = new Date(year, month, day, hour, minutes, seconds, milliseconds);
+        let date3 = new Date(2012,11, 4, 5, 34, 23, 55);    //month starts from index 0-11
+        console.log(date3);
+
+        let startTime = Date.now();
+
+        console.log(date3.getFullYear())
+        console.log(date3.getMonth()) //0 to 11
+        console.log(date3.getDate())  //actual date
+        console.log(date3.getTime())
+        console.log(date3.getMinutes())
+
+        let formattedDate = `Date is ${date3.getDate()}/${date3.getMonth()}/${date3.getFullYear()}`;
+        document.querySelector('#formattedDate').innerHTML = formattedDate;
+
+        //UTC - coordinated universal time -London
+        let date4 = new Date();
+        console.log(date4.getHours());  //local hours now
+        console.log(date4.getUTCHours());  //current hours in london
+        
+        console.log(date4);
+        date4.setDate(5);   //add 5 to the day part of date
+        console.log(date4);
+
+
+        let endTime = Date.now();
+        console.log("time taken to execute the code in Ms is: "+(endTime-startTime))
+
+        let timeElapsedInMs = Date.now();
+        console.log(timeElapsedInMs);
+
+    </script>
+
+</body>
+
+</html>

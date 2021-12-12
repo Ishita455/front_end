@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body id="bodyTag">
+    <h2>SetTimeOut function in JS</h2>
+    <div id="textArea">
+        time in seconds: <span id="seconds"></span>
+    </div>
+
+
+    <script>
+        function display(empName, empDept) {
+            console.log("Name: " + empName + " Dept: " + empDept);
+        }
+        // display("John", "phy");
+        // display("Peter", "chem");
+
+        //setInterval(display, 2000);
+        //setInterval(display, 4000, "John", "phy");    //This funtn helps to execute more than once another funtn after a certain time(millisecond)
+
+        let count = 0;
+        setInterval(function () {
+            count++;
+            document.querySelector('#textArea').innerHTML = count;
+            let color = `#${count}00${count}00`
+            document.querySelector('#textArea').style.backgroundColor = color;
+
+        }, 1000);
+
+        let intervalId = setInterval(display, 5000, "John", "phy");
+        console.log(`time out id is ${intervalId}`);
+
+        //lets cancel the 10sec timeout with the help of timeout
+
+        clearInterval(intervalId);
+
+</script>
+
+</body>
+
+</html>

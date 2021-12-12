@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Array Filter in JS</title>
+</head>
+
+<body>
+    <h2>Array Filter in JS</h2>
+
+    <script>
+        let ageArray = [13,12,35,19,45,78];
+
+        //I want all the people who r eligiable for voting
+        function checkEligibility(age){
+            return age>18;
+        }
+        let eligiableArr = ageArray.filter(checkEligibility);
+        console.log("Eligibal for voting")
+        console.log(eligiableArr);
+
+        function checkNonEligibility(age){
+            return age<18;
+        }
+        let eligiableNonArr = ageArray.filter(checkNonEligibility);
+        console.log("NOT Eligibal for voting")
+
+        console.log(eligiableNonArr);
+
+    </script>
+</body>
+
+</html>
